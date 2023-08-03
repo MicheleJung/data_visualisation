@@ -7,8 +7,6 @@ for i in os.listdir():
   if i.endswith('csv'):
     file_name_list.append(i)
   
-st.write(file_name_list)
-
 st.write('Hello World')
 
 df = pd.read_csv('Bastar Craton.csv')
