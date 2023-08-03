@@ -18,8 +18,8 @@ x_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list [0])
 
-x = [el_list] # das muss irgendwie geändert werden
-y = [el_list]
+x = ['Mg'] # das muss irgendwie geändert werden
+y = ['Si']
 
 p = figure(
     title='simple scatter example',
