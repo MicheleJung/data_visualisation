@@ -22,9 +22,9 @@ x = df['Mg']
 y = df['Si']
 
 p = figure(
-    title='simple line example',
-    x_axis_label='x',
-    y_axis_label='y')
+    title='simple scatter example',
+    x_axis_label='Mg',
+    y_axis_label='Si')
 
 p.circle(x, y, legend_label='Trend', line_width=2)
 
