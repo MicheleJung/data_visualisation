@@ -24,7 +24,7 @@ y = df[el_list]
 p = figure(
     title='simple scatter example',
     x_axis_label='x',
-    y_axis_label='y'
+    y_axis_label='y')
 
 p.circle(x, y, legend_label='Trend', line_width=2)
 
