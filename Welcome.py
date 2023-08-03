@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 from bokeh.plotting import figure
 import os
 
@@ -27,6 +28,6 @@ p = figure(
     y_axis_label = y + ' wt%')
 
 p.circle(df[x]/10000, df[y]/10000, legend_label='data', line_width=2)
-p.line(mean(df[x]/10000), mean(df[y]/10000), legend_label='mean', line_width=2)
+p.line(np.mean(df[x]/10000), np.mean(df[y]/10000), legend_label='mean', line_width=2)
 
 st.bokeh_chart(p, use_container_width=True)
