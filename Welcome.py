@@ -23,8 +23,8 @@ y = df['el_list'/10000]
 
 p = figure(
     title='simple scatter example',
-    x_axis_label=(x + wt%),
-    y_axis_label=(y + wt%)
+    x_axis_label=('x' + wt%),
+    y_axis_label=('y' + wt%)
 
 p.circle(x, y, legend_label='Trend', line_width=2)
 
