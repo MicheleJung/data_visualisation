@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from ipywidgets import interact
+import numpy as np
+from bokeh.plotting import figure, show
+from bokeh.io import output_notebook
 import os
 
 file_name_list = []
@@ -18,3 +20,6 @@ el_list = df.columns.tolist()[27:80]
 x_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list [0])
+
+
+
