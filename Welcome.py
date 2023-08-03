@@ -18,13 +18,13 @@ x_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list [0])
 
-x = df['el_list']/10000
-y = df['el_list']/10000
+x = df['el_list']
+y = df['el_list']
 
 p = figure(
     title='simple scatter example',
-    x_axis_label=('el_list' + wt%),
-    y_axis_label=('el_list' + wt%)
+    x_axis_label=('el_list'/10000 + wt%),
+    y_axis_label=('el_list'/10000 + wt%)
 
 p.circle(x, y, legend_label='Trend', line_width=2)
 
