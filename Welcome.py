@@ -18,7 +18,7 @@ x_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list [0])
 
-x = [1, 2, 3, 4, 5]
+x = [1, 2, 3, 4, 5] # das muss irgendwie geändert werden
 y = [6, 7, 2, 4, 5]
 
 p = figure(
