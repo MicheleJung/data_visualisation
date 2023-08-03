@@ -18,13 +18,13 @@ x_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list [0])
 
-x = df['el_list'] # das muss irgendwie geändert werden
-y = df['el_list']
+x = df['Mg'] # das muss irgendwie geändert werden
+y = df['Si']
 
 p = figure(
     title='simple scatter example',
-    x_axis_label='x',
-    y_axis_label='y')
+    x_axis_label='Mg',
+    y_axis_label='Si')
 
 p.circle(x, y, legend_label='Trend', line_width=2)
 
