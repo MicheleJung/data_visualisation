@@ -23,8 +23,8 @@ y = st.selectbox('select element y_axis', el_list)
 
 p = figure(
     title='simple scatter example',
-    x_axis_label = x + 'wt%',
-    y_axis_label = y + 'wt%')
+    x_axis_label = x +  'wt%',
+    y_axis_label = y +  'wt%')
 
 p.circle(df[x]/10000, df[y]/10000, legend_label='Trend', line_width=2)
 
