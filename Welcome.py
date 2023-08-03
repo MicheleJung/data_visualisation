@@ -18,8 +18,8 @@ x_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list [0])
 
-x = df[el_list]
-y = df[el_list]
+x = df[Mg]
+y = df[Si]
 
 p = figure(
     title='simple scatter example',
