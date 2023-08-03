@@ -26,6 +26,6 @@ p = figure(
     x_axis_label='x',
     y_axis_label='y')
 
-p.circle(x, y, legend_label='Trend', line_width=2, el_list)
+p.circle(x, y, legend_label='Trend', line_width=2, 'el_list')
 
 st.bokeh_chart(p, use_container_width=True)
