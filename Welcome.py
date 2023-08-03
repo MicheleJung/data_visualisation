@@ -18,14 +18,14 @@ x_axis = st.selectbox('select element', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list [0])
 
-x = df['Mg'] # das muss irgendwie geändert werden
-y = df['Si']
+x = st.selectbox('select element x_axis', el_list)
+y = st.selectbox('select element y_axis', el_list)
 
 p = figure(
     title='simple scatter example',
     x_axis_label='Mg',
     y_axis_label='Si')
 
-p.circle(x, y, legend_label='Trend', line_width=2)
+p.circle(df[x], df[y], legend_label='Trend', line_width=2)
 
 st.bokeh_chart(p, use_container_width=True)
